@@ -1,9 +1,10 @@
+import React from 'react';
 import Link from 'next/link';
-import {createCalendar} from '@/app/lib/actions';
+import {createCalendar} from '../lib/actions';
 
 export default function CreateCalendarForm() {
   return (
-    <form action={createCalendar}>
+    <form name="CalenderForm" action={createCalendar}>
       <div className="rounded-md mt-10">
         <div className="mb-6">
           <label
