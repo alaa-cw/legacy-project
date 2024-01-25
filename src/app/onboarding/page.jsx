@@ -1,6 +1,7 @@
+import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import OnboardingStepper from '@/app/components/onboarding-stepper';
+import OnboardingStepper from '../components/onboarding-stepper';
 
 export default function Page() {
   const currentPage = 2;

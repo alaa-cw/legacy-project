@@ -6,7 +6,7 @@ export const calendarDaySchema = new mongoose.Schema({
   imageUrl: {type: String},
   videoUrl: {type: String},
   lastViewedAt: {type: Date}
-  // calendarId: {type: String, required: true}
+  // calendarId: {type: String, required: true}  to be removed because it's not needed and was commented out in the original code
 });
 
 const CalendarDay =

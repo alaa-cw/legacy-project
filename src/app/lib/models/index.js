@@ -1,16 +1,16 @@
 import mongoose from 'mongoose';
 
-
-const connectDB = async () => { 
+//process.env.MONGODB_URI had to remove this because it was causing an error when trying to connect to the database
+const connectDB = async () => {
   try {
-    await mongoose.connect(process.env.MONGODB_URI, {
-      // useNewUrlParser: true,
-      // useUnifiedTopology: true,
+    await mongoose.connect('mongodb://127.0.0.1:27017/Advent' , {
+      useNewUrlParser: true,// this was commented out but was added to fix a deprecation warning
+      useUnifiedTopology: true,
     });
     console.log('Connected to MongoDB successfully!');
   } catch (error) {
     console.log('Failed to connect to MongoDB:', error);
-    // process.exit(1);
+
   }
 }
 

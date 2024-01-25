@@ -1,4 +1,5 @@
-import CreateCalendarForm from '@/app/components/create-calendar-form';
+import React from 'react';
+import CreateCalendarForm from '../components/create-calendar-form';
 
 export default function Page() {
   return (

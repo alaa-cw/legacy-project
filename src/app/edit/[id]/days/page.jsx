@@ -1,3 +1,4 @@
+import React from 'react';
 import {getCalendarById} from '@/app/lib/data';
 import DayCard from '@/app/components/edit-day-card';
 import Link from 'next/link';

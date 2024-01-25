@@ -1,6 +1,8 @@
+import React from 'react'
+
 const OnboardingStepper = ({ currentPage }) => {
   return (
-    <div className="flex justify-center items-center">
+    <div className="flex justify-center items-center" data-testid="onboarding-stepper">
       <div className="flex space-x-4">
         <div
           className={`w-4 h-4 rounded-full ${currentPage === 1 ? 'bg-green-400' : 'bg-gray-300'}`}
