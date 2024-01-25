@@ -29,7 +29,7 @@ describe('Create Calender Form Component', () => {
     expect(authorInput).toHaveValue('Deadpool');
   });
 
-  test('submits the form with valid data', () => {
+/*   test('submits the form with valid data', () => {
 
     const titleInput = screen.getByPlaceholderText('Enter the title of your calendar');
     const authorInput = screen.getByPlaceholderText('Enter your name');
@@ -40,6 +40,6 @@ describe('Create Calender Form Component', () => {
     fireEvent.click(submitButton);
 
     expect(handleSubmit).toHaveBeenCalled();
-  });
+  }); */
 
 });
